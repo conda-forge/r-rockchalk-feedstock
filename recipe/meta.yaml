@@ -1,4 +1,4 @@
-{% set version = '1.8.144' %}
+{% set version = "1.8.151" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,10 +11,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rockchalk_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rockchalk/rockchalk_{{ version }}.tar.gz
-  sha256: cb5e6c87ec95589f2b02da7ed7a5a67ec125e132100c8ae6762fad52820db71d
+  sha256: 5ef050f55e89c573bb85c7aa7dd7d70c1923be9052d7c60b531bc8376c57ae9e
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -48,17 +48,12 @@ test:
 about:
   home: https://CRAN.R-project.org/package=rockchalk
   license: GPL-3.0-or-later
-  summary: A collection of functions for interpretation and presentation of regression analysis.  These
-    functions are used to produce the statistics lectures in <http://pj.freefaculty.org/guides>.
-    Includes regression diagnostics, regression tables, and plots of interactions and
-    "moderator" variables. The emphasis is on "mean-centered" and "residual-centered"
-    predictors. The vignette 'rockchalk' offers a fairly comprehensive overview.  The
-    vignette 'Rstyle' has advice about coding in R.  The package title 'rockchalk' refers
-    to our school motto, 'Rock Chalk Jayhawk, Go K.U.'.
+  summary: A collection of functions for interpretation and presentation of regression analysis.  These functions are used to produce the statistics lectures in <http://pj.freefaculty.org/guides>. Includes regression diagnostics, regression tables, and plots of interactions and "moderator" variables. The emphasis is on "mean-centered"
+    and "residual-centered" predictors. The vignette 'rockchalk' offers a fairly comprehensive overview.  The vignette 'Rstyle' has advice about coding in R.  The package title 'rockchalk' refers to our school motto, 'Rock Chalk Jayhawk, Go K.U.'.
 
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
