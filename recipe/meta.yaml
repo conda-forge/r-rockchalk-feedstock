@@ -1,4 +1,4 @@
-{% set version = "1.8.151" %}
+{% set version = "1.8.152" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rockchalk_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rockchalk/rockchalk_{{ version }}.tar.gz
-  sha256: 5ef050f55e89c573bb85c7aa7dd7d70c1923be9052d7c60b531bc8376c57ae9e
+  sha256: 031acb78612fa5da7d33530ee6d392aa540ef327ad35c5a2dab70ccf1e9525b4
 
 build:
   merge_build_host: true  # [win]
