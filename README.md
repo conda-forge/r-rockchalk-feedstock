@@ -1,11 +1,11 @@
-About r-rockchalk
-=================
+About r-rockchalk-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rockchalk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=rockchalk
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rockchalk-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of functions for interpretation and presentation of regression analysis.  These functions are used to produce the statistics lectures in <http://pj.freefaculty.org/guides>. Includes regression diagnostics, regression tables, and plots of interactions and "moderator" variables. The emphasis is on "mean-centered" and "residual-centered" predictors. The vignette 'rockchalk' offers a fairly comprehensive overview.  The vignette 'Rstyle' has advice about coding in R.  The package title 'rockchalk' refers to our school motto, 'Rock Chalk Jayhawk, Go K.U.'.
 
