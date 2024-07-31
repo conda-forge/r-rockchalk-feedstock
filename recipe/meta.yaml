@@ -1,7 +1,6 @@
 {% set version = "1.8.157" %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rockchalk
@@ -14,8 +13,7 @@ source:
   sha256: 814099ca8b1193992cd6e0af759a7d5bac74b891fbb4518c7f0e7fd56dcbe28d
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
